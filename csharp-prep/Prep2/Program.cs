@@ -10,22 +10,24 @@ class Program
         string grade = Console.ReadLine();
         int number = int.Parse(grade);
 
+        string letter = "grade";
+
         if(number>= 90){
-            Console.WriteLine("A");
+            letter = "A";
         }
         else if(number>=80){
-            Console.WriteLine("B");
+            letter = "B";
         }
         else if(number>=70){
-            Console.WriteLine("C");
+            letter = "C";
         }
         else if(number>=60){
-            Console.WriteLine("D");
+            letter = "D";
         }
         else {
-            Console.WriteLine("F");
+            letter = "F";
         };
-        
+            Console.WriteLine(letter);
         if (number >=70){
             Console.WriteLine("Congratulations you have passed the course!");
         }
