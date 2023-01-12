@@ -5,22 +5,38 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello Prep3 World!");
-        Console.WriteLine("What is the magic number?");
-        string magicNum = Console.ReadLine();
-        int magic = int.Parse(magicNum);
+        string magicNum = "";
+        int magic = 0;
+        string guessNum = "";
+        int guess = 0;
 
-        Console.WriteLine("What is your guess?");
-        string guessNum = Console.ReadLine();
-        int guess = int.Parse(guessNum);
+        Console.WriteLine("What is the magic number?");
+        magicNum = Console.ReadLine();
+        magic = int.Parse(magicNum);
+
         
-        if(magic > guess){
-            Console.WriteLine("Higher");
-        }
-        else if(magic< guess){
-            Console.WriteLine("Lower");
-        }
-        else {
-            Console.WriteLine("You guessed it!");
-        };
+        do 
+        {
+            
+
+            Console.WriteLine("What is your guess?");
+            guessNum = Console.ReadLine();
+            guess = int.Parse(guessNum);
+            
+            if(magic > guess){
+                Console.WriteLine("Higher");
+                //break;
+            }
+            else if(magic< guess){
+                Console.WriteLine("Lower");
+                //break;
+            }
+            else{
+                Console.WriteLine("You guessed it!");
+            }
+            } while (magic!=guess);
+            
+        
     }
+
 }
