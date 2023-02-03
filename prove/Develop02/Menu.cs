@@ -10,7 +10,7 @@ public class Menu
         int inputNumber = 0;
         DateTime theCurrentTime = DateTime.Now;
         string dateText = theCurrentTime.ToShortDateString();
-        WriteFile writeFile= new WriteFile();
+        //WriteFile writeFile= new WriteFile();
         LoadFile load = new LoadFile();
         Show showFile = new Show();
 
@@ -34,7 +34,7 @@ public class Menu
                 myJournal._prompt = prompt;
                 myJournal._response = response;
                 myJournal._date = dateText;
-                writeFile.journalList.Add(myJournal);
+                showFile.journalList.Add(myJournal);
                 
             
             }
@@ -43,11 +43,14 @@ public class Menu
                 
             }
             else if(inputNumber == 3){
-                load.Load();
+                Console.Write("Write the file name");
+                String inputFile = Console.ReadLine();
+                load.Load(inputFile,showFile);
             }
             else if(inputNumber == 4){
-                //saveFile.Saver();
-                writeFile.Data();
+                Console.Write("Write the file name");
+                String inputFile = Console.ReadLine();
+                showFile.WriteFile(inputFile);
             }
             else{
                 Console.WriteLine("See You soon!");

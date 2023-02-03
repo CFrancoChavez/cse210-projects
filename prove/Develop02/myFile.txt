@@ -1,7 +1,0 @@
-  date: 31/1/2023 - prompt: How did I see the hand of the Lord in my life today? alltime.
- date: 31/1/2023 - prompt: What was the strongest emotion I felt today? gratitud.
- date: 31/1/2023 - prompt: What was the best part of my day? night.
- date: 31/1/2023 - prompt: How did I see the hand of the Lord in my life today? siempre.
- date: 31/1/2023 - prompt: If I had one thing I could do over today, what would it be? Run faster.
- date: 31/1/2023 - prompt: If I had one thing I could do over today, what would it be? Run faster.
- date: 31/1/2023 - prompt: What was the best part of my day? mañana.
