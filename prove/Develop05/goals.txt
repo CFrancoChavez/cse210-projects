@@ -1,0 +1,4 @@
+2750
+SimpleGoal|run|running|50|True
+EternalGoal|pray|prayer|100|False
+ChecklistGoal|study english|english speak|500|True|1000|3|3
